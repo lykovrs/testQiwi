@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--<link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
+    <title>Qiwi test task</title>
+    <!--[if lte IE 8]>
+    <script src="src/assets/js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="built/assets/styles/style.css">
+</head>
+<body>
+   <header class="b-header">
+       <div class="container">
+           <div class="b-header__logo">
+               <a class="logo" href="/"></a>
+           </div>
+
+           <div class="auth b-header__auth">
+               <form action="">
+                   <div class="form-group">
+                        <span class="form-group__label">Войти в мой кошелек</span>
+                        <div class="form-group__ctrl form-group__ctrl_t_tel">
+                            <div class="form-group__lang form-group__lang_t_ru"></div>
+                            <input class="form-group__input" type="tel" placeholder="+7" pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер">
+                        </div>
+
+                    </div>
+                   <div class="form-group">
+                       <a href="#" class="form-group__label">Забыли пароль?</a>
+                       <div class="form-group__ctrl">
+                           <input class="form-group__input" type="password" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра">
+                       </div>
+
+                   </div>
+                   <button class="btn" type="submit">Войти</button>
+               </form>
+           </div>
+           <h1 class="b-header__title">Добро пожаловать в QIWI Кошелек!</h1>
+       </div>
+
+   </header>
+   <div class="content-gradient">
+        Тело
+   </div>
+    <footer>
+        Подвал
+    </footer>
+</body>
+</html>

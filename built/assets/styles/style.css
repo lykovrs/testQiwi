@@ -1,0 +1,297 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@import url("http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic");
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+img,
+video,
+embed,
+object {
+  max-width: 100%;
+}
+.auth {
+  word-spacing: -0.36em;
+}
+.auth__item {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.auth__item:before,
+.auth__item:after {
+  content: '';
+  display: table;
+}
+.auth__item:after {
+  clear: both;
+}
+.auth__item:last-child {
+  margin-right: 0%;
+}
+.btn {
+  color: #fff;
+  background: #283991;
+  border: 0;
+  max-width: 230px;
+  height: 40px;
+  padding: 4px 22px;
+  font-size: 18px;
+  white-space: normal;
+  vertical-align: top;
+}
+.btn:hover {
+  background: #1f2c71;
+}
+.container {
+  max-width: 1920px;
+  margin: auto;
+}
+.content-gradient {
+  background: #cfc;
+}
+.form-group {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  height: 40px;
+  font-size: 16px;
+  border: 3px solid #d6d6d6;
+  margin-left: 20px;
+}
+.form-group:first-child {
+  margin-left: 0;
+}
+.form-group__label {
+  position: absolute;
+  top: -27px;
+  left: 15px;
+  font-size: 11px;
+  word-spacing: normal;
+}
+.form-group__ctrl {
+  position: relative;
+  height: 100%;
+  padding: 0 10px;
+}
+.form-group__ctrl_t_tel {
+  padding: 0 10px 0 40px;
+}
+.form-group__lang {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -6px;
+}
+.form-group__lang_t_ru {
+  background-image: url("../images/sprite.png");
+  background-position: 0px -75px;
+  width: 18px;
+  height: 12px;
+}
+.form-group__input {
+  border: none;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  font-size: 24px;
+  line-height: 33px;
+}
+.form-group__input:focus {
+  outline: none;
+}
+.b-header {
+  *zoom: 1;
+  width: auto;
+  max-width: 1580px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.b-header:before,
+.b-header:after {
+  content: '';
+  display: table;
+}
+.b-header:after {
+  clear: both;
+}
+.b-header__logo {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 30px 0;
+}
+.b-header__logo:before,
+.b-header__logo:after {
+  content: '';
+  display: table;
+}
+.b-header__logo:after {
+  clear: both;
+}
+.b-header__logo:last-child {
+  margin-right: 0%;
+}
+.b-header__auth {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 30px 0;
+}
+.b-header__auth:before,
+.b-header__auth:after {
+  content: '';
+  display: table;
+}
+.b-header__auth:after {
+  clear: both;
+}
+.b-header__auth:last-child {
+  margin-right: 0%;
+}
+.b-header__title {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+}
+.b-header__title:before,
+.b-header__title:after {
+  content: '';
+  display: table;
+}
+.b-header__title:after {
+  clear: both;
+}
+.b-header__title:last-child {
+  margin-right: 0%;
+}
+.logo {
+  background-image: url("../images/sprite.png");
+  background-position: 0px 0px;
+  width: 215px;
+  height: 75px;
+  display: block;
+}
