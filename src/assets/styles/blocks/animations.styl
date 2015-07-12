@@ -1,0 +1,112 @@
+.animations
+  position relative
+  background linear-gradient(#6cd1ff, #aee4fe)
+  min-height 570px
+
+  &__item
+    position absolute
+
+    &_t_cloud
+      sprite($s-cloud_1)
+
+    &_t_cloud-1
+      animation cloud-drift_1 10s infinite
+      top 31px
+      left 32px
+
+    &_t_cloud-2
+      animation cloud-drift_2 60s infinite
+      sprite($s-cloud_2)
+      top 65px
+      right 320px
+
+    &_t_cloud-3
+      animation cloud-drift_3 45s infinite
+      top 145px
+      right 30px
+
+    &_t_box-1
+      animation pendulum 19s infinite
+      sprite($s-box_1)
+      top 47px
+      left 113px
+
+    &_t_box-2
+      animation pendulum_1 9s infinite
+      sprite($s-box_2)
+      top 282px
+      left 335px
+
+    &_t_hero
+      sprite($s-hero)
+      bottom 60px
+      right 50px
+
+@keyframes cloud-drift_1
+  0%
+    left 32px
+    opacity 1
+  25%
+    right 0px
+    opacity .75
+  50%
+    left 32px
+    opacity .5
+  75%
+    left 0px
+    opacity .75
+  100%
+    left 32px
+    opacity 1
+
+
+@keyframes cloud-drift_2
+  0%
+    right 320px
+    opacity 1
+  25%
+    right  0px
+    opacity .25
+  50%
+    right 320px
+    opacity 1
+  75%
+    right 0px
+    opacity .25
+  100%
+    right 320px
+    opacity 1
+
+@keyframes cloud-drift_3
+  0%
+    right 310px
+    opacity 0
+  25%
+    right  0px
+    opacity .25
+  50%
+    right 310px
+    opacity 1
+  75%
+    right 0px
+    opacity .25
+  100%
+    right 310px
+    opacity 0
+
+@keyframes pendulum
+  0%, 100%
+    transform rotate(2deg)
+  25%, 75%
+    transform rotate(-4deg)
+  50%
+    transform rotate(4deg)
+
+@keyframes pendulum_1
+  0%, 100%
+    transform rotate(.6deg)
+  25%, 75%
+    transform rotate(-1.2deg)
+  50%
+    transform rotate(1.2deg)
+

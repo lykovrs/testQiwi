@@ -7,22 +7,23 @@ global-reset()
 normalize-base()
 
 *
-    box-sizing(border-box)
+  box-sizing(border-box)
 
 @import url(http://fonts.googleapis.com/css?family=PT\+Sans&subset=latin,cyrillic);
 
 body
-    font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
 
 img, video, embed, object
-    max-width 100%
+  max-width 100%
 
-jeet = {
-  gutter: 0,
-  parent-first: false,
-  layout-direction: LTR,
-  max-width: 1920px
-}
+//edit()
+
+$grey = #d6d6d6
+$dark-grey = #666
+$dark = #000
+
+$imgSrc = "../../../src/assets/images/"
 
 @import 'blocks/*'
 

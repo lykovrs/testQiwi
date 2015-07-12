@@ -1,0 +1,32 @@
+.lang-selector
+
+
+  //
+  //&__list
+
+
+
+  &__item
+    padding: 0 10px 0 45px;
+    display none
+    position relative
+    color grey
+
+    &_t_current
+      display inline-block
+
+      &:after
+        content ""
+        border 3px solid transparent
+        border-top 7px solid $dark-grey
+        display: inline-block;
+        vertical-align: middle;
+        margin-left 10px
+
+    &_t_ru:before
+      sprite($s-ru)
+      display block
+      content ""
+      position absolute
+      left 5px
+

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!--<link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>-->
     <title>Qiwi test task</title>
     <!--[if lte IE 8]>
     <script src="src/assets/js/respond.min.js"></script>
@@ -12,40 +11,128 @@
 </head>
 <body>
    <header class="b-header">
-       <div class="container">
-           <div class="b-header__logo">
-               <a class="logo" href="/"></a>
-           </div>
-
-           <div class="auth b-header__auth">
-               <form action="">
-                   <div class="form-group">
-                        <span class="form-group__label">Войти в мой кошелек</span>
-                        <div class="form-group__ctrl form-group__ctrl_t_tel">
-                            <div class="form-group__lang form-group__lang_t_ru"></div>
-                            <input class="form-group__input" type="tel" placeholder="+7" pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер">
-                        </div>
-
-                    </div>
-                   <div class="form-group">
-                       <a href="#" class="form-group__label">Забыли пароль?</a>
-                       <div class="form-group__ctrl">
-                           <input class="form-group__input" type="password" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра">
-                       </div>
-
-                   </div>
-                   <button class="btn" type="submit">Войти</button>
-               </form>
-           </div>
-           <h1 class="b-header__title">Добро пожаловать в QIWI Кошелек!</h1>
+       <div class="b-header__logo">
+           <a class="logo" href="/"></a>
        </div>
 
+       <div class="auth b-header__auth">
+           <form action="">
+               <div class="form-group auth__item">
+                    <span class="form-group__label">Войти в мой кошелек</span>
+                    <div class="form-group__ctrl form-group__ctrl_t_tel">
+                        <div class="form-group__lang form-group__lang_t_ru"></div>
+                        <input class="form-group__input" type="tel" placeholder="+7" pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер">
+                    </div>
+               </div>
+               <div class="form-group auth__item">
+                   <a href="#" class="form-group__label">Забыли пароль?</a>
+                   <div class="form-group__ctrl">
+                       <input class="form-group__input" type="password" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра">
+                   </div>
+               </div>
+               <button class="btn" type="submit">Войти</button>
+               <button class="btn btn_t_crystal" type="submit">Помощь</button>
+           </form>
+       </div>
+       <h2 class="b-header__title">Добро пожаловать в QIWI Кошелек!</h2>
+
    </header>
-   <div class="content-gradient">
-        Тело
+   <div class="animations">
+       <section class="content">
+            <div class="advantages">
+                <figure class="advantages__item">
+                    <p class="advantages__img advantages__img_t_star"></p>
+                    <figcaption class="advantages__description">Новый дизайн и чистый интерфейс</figcaption>
+                </figure>
+                <figure class="advantages__item">
+                    <p class="advantages__img advantages__img_t_card"></p>
+                    <figcaption class="advantages__description">Легкое управление средствами</figcaption>
+                </figure>
+                <figure class="advantages__item">
+                    <p class="advantages__img advantages__img_t_armor"></p>
+                    <figcaption class="advantages__description">Трехступенчатая защита платежных систем</figcaption>
+                </figure>
+            </div>
+
+            <h1 class="content__header">Кошелек нужен игроку <span class="content__img"></span> для...</h1>
+
+            <p class="content__text">
+                Оплаты мобильного, покупок в соц. сетях и играх <b>без комиссии</b>, а так же совершения любых платежей в Интернете быстро и удобно.
+            </p>
+
+            <div class="registration content__registration">
+                <input type="text" class="registration__ctrl"/>
+                <button class="registration__btn">Зарегистрироваться</button>
+            </div>
+
+       </section>
+        <div class="animations__item animations__item_t_cloud animations__item_t_cloud-1"></div>
+        <div class="animations__item animations__item_t_cloud animations__item_t_cloud-2"></div>
+        <div class="animations__item animations__item_t_cloud animations__item_t_cloud-3"></div>
+        <div class="animations__item animations__item_t_box-1"></div>
+        <div class="animations__item animations__item_t_box-2"></div>
+        <div class="animations__item animations__item_t_hero"></div>
    </div>
-    <footer>
-        Подвал
+    <footer class="footer">
+        <div  class="footer__nav">
+            <nav class="nav">
+                <ul>
+                    <li class="nav__item"><a href="#" class="nav__lnk">Карта QIWI терминалов</a></li>
+                    <li class="nav__item"><a href="#" class="nav__lnk">Безопасность</a></li>
+                    <li class="nav__item"><a href="#" class="nav__lnk">Идентификация</a></li>
+                    <li class="nav__item"><a href="#" class="nav__lnk">Помощь</a></li>
+                    <li class="nav__item"><a href="#" class="nav__lnk">Оферты</a></li>
+                </ul>
+            </nav>
+
+            <nav class="nav footer__nav">
+                <ul>
+                    <li class="nav__item"><a href="#" class="nav__lnk">Контакты</a></li>
+                    <li class="nav__item"><a href="#" class="nav__lnk">Бизнесуь</a></li>
+                    <li class="nav__item"><a href="#" class="nav__lnk">Инвестрам</a></li>
+                    <li class="nav__item"><a href="#" class="nav__lnk">КИВИ Банк</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__contacts">
+            <p class="footer__phone">
+                <a class="footer__phone-lnk" href="tel: +78007077759">8 800 707-77-59</a>
+            </p>
+
+            <div class="social footer__social">
+                <a href="#" class="social__item social__item_t_vk"></a>
+                <a href="#" class="social__item social__item_t_ok"></a>
+                <a href="#" class="social__item social__item_t_yt"></a>
+                <a href="#" class="social__item social__item_t_tw"></a>
+                <a href="#" class="social__item social__item_t_fb"></a>
+            </div>
+        </div>
+
+        <div class="apps footer__apps">
+            <a href="#" class="apps__item apps__item_t_apple"></a>
+            <a href="#" class="apps__item apps__item_t_google"></a>
+            <a href="#" class="apps__item apps__item_t_windows"></a>
+        </div>
+
+        <div class="partners footer__partners">
+            <a href="#" class="partners__item partners__item_t_pci"></a>
+            <a href="#" class="partners__item partners__item_t_kas"></a>
+            <a href="#" class="partners__item partners__item_t_visa"></a>
+            <a href="#" class="partners__item partners__item_t_msc"></a>
+        </div>
+
+        <div class="lang-selector footer__lang-selector">
+            <ul class="lang-selector__list">
+                <li class="lang-selector__item lang-selector__item_t_ru lang-selector__item_t_current">Русский</li>
+                <li class="lang-selector__item lang-selector__item_t_en">English</li>
+            </ul>
+        </div>
+
+        <div class="footer__copyright">
+            © QIWI, 2015
+        </div>
+
     </footer>
 </body>
 </html>

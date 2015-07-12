@@ -1,0 +1,46 @@
+.social
+  &__item
+    margin-left 22px
+    display inline-block
+    opacity .5
+    width 20px
+    height 20px
+    background-repeat no-repeat
+    background-size 100% auto
+
+    &:hover
+      opacity 1
+
+    &_t_vk
+      background-image url($imgSrc + "/social/vkontakte.png")
+
+    &_t_ok
+      background-image url($imgSrc + "/social/odnoklassniki.png")
+
+    &_t_yt
+      background-image url($imgSrc + "/social/youtube.png")
+
+    &_t_tw
+      background-image url($imgSrc + "/social/twitter.png")
+
+    &_t_fb
+      background-image url($imgSrc + "/social/facebook.png")
+
+//@media only screen and (device-pixel-ratio: 2)
+//  .social
+//    &__item
+//
+//      &_t_vk
+//        sprite($s-vkontakte)
+//
+//      &_t_ok
+//        sprite($s-odnoklassniki)
+//
+//      &_t_yt
+//        sprite($s-youtube)
+//
+//      &_t_tw
+//        sprite($s-twitter)
+//
+//      &_t_fb
+//        sprite($s-facebook)
