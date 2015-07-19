@@ -26,21 +26,13 @@
     &_t_fb
       background-image url($imgSrc + "/social/facebook.png")
 
-//@media only screen and (device-pixel-ratio: 2)
-//  .social
-//    &__item
-//
-//      &_t_vk
-//        sprite($s-vkontakte)
-//
-//      &_t_ok
-//        sprite($s-odnoklassniki)
-//
-//      &_t_yt
-//        sprite($s-youtube)
-//
-//      &_t_tw
-//        sprite($s-twitter)
-//
-//      &_t_fb
-//        sprite($s-facebook)
+@media (min-width: 481px) and (max-width:768px)
+  .social
+    &__item
+      margin-left: 15px;
+
+@media (max-width: 480px)
+  .social
+    text-align center
+    &__item
+      margin 0 10px

@@ -1,6 +1,7 @@
 .animations
   position relative
   background linear-gradient(#6cd1ff, #aee4fe)
+  background-color #6cd1ff
   min-height 570px
 
   &__item
@@ -13,34 +14,40 @@
       animation cloud-drift_1 10s infinite
       top 31px
       left 32px
+      z-index 1
 
     &_t_cloud-2
       animation cloud-drift_2 60s infinite
       sprite($s-cloud_2)
       top 65px
       right 320px
+      z-index 2
 
     &_t_cloud-3
       animation cloud-drift_3 45s infinite
       top 145px
       right 30px
+      z-index 3
 
     &_t_box-1
       animation pendulum 19s infinite
       sprite($s-box_1)
       top 47px
       left 113px
+      z-index 4
 
     &_t_box-2
       animation pendulum_1 9s infinite
       sprite($s-box_2)
       top 282px
       left 335px
+      z-index 5
 
     &_t_hero
       sprite($s-hero)
       bottom 60px
       right 50px
+      z-index 6
 
 @keyframes cloud-drift_1
   0%
@@ -109,4 +116,47 @@
     transform rotate(-1.2deg)
   50%
     transform rotate(1.2deg)
+
+@media (min-width: 1025px) and (max-width:1600px)
+  .animations
+    &__item
+      animation none
+      opacity .2
+
+@media (min-width: 769px) and (max-width:1024px)
+  .animations
+    &__item
+      animation none
+      opacity .1
+
+      &_t_box-2
+        top 15px
+        right 50px
+        left auto
+
+      &_t_hero
+        bottom 50px
+        right 50%
+        margin-right -224px
+
+@media (min-width: 481px) and (max-width:768px)
+  .animations
+    &__item
+      animation none
+      opacity .1
+
+      &_t_box-2
+        top 15px
+        right 50px
+
+      &_t_hero
+        bottom 50px
+        right 50%
+        margin-right -224px
+
+@media (max-width: 480px)
+  .animations
+    &__item
+      display none
+
 

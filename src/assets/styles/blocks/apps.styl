@@ -1,5 +1,4 @@
 .apps
-
   &__item
     margin-right 30px
     display inline-block
@@ -23,3 +22,9 @@
     &_t_windows
       background-image url($imgSrc + "/apps/microsoft.png")
       width 109px
+
+@media (max-width: 480px)
+  .apps
+    text-align center
+    &__item
+      margin 0 10px

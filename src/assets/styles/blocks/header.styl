@@ -1,32 +1,92 @@
 .b-header
-  center(1640px, 20px)
-
+  center(1610px, 20px)
   &__logo
     span(1/4)
-    padding 30px
+    padding 30px 0
 
   &__auth
     span(3/4)
     padding 50px 0
     text-align right
+    word-spacing -.36em
+
+  &__auth-btn
+    position relative
+    left -1px
 
   &__title
     stack()
     text-align center
     font-size 46px
-    padding 35px
-    margin-bottom 25px
+    padding 10px
+    margin-bottom 50px
 
 
 @media (min-width: 769px) and (max-width:1024px)
   .b-header
     &__logo
-      span(1/3)
+      col(1/3)
     &__auth
-      span(2/3)
-
+      col(2/3, cycle: 2)
+      padding-bottom 10px
+      text-align right
+    &__auth-item
+      col(1/2)
+    &__title
+      font-size 38px
+      margin 10px 0
 
 @media (min-width: 481px) and (max-width:768px)
   .b-header
-    &__logo, &__auth
+    &__logo
       stack()
+      .logo
+        margin auto
+    &__auth
+      stack()
+      padding 0
+
+    &__auth-wrapper
+      stack()
+
+    &__auth-item
+      col(1/2)
+
+    &__auth-btn
+      margin-top 20px
+
+    &__title
+      font-size 30px
+      margin 10px 0
+
+@media (max-width: 480px)
+  .b-header
+    &__logo
+      stack()
+      padding 10px 0
+      .logo
+        margin auto
+        width 150px
+        height 60px
+
+    &__auth
+      stack()
+      padding 0
+
+    &__auth-wrapper
+      display none
+
+    &__auth-item
+      col(1/2)
+
+    &__auth-btn
+      display block
+      .btn
+        col(1/2)
+        text-align center
+
+    &__title
+      font-size 26px
+      margin 0
+      padding 17px 0
+      line-height 33px

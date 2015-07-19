@@ -12,8 +12,6 @@
     "gulp-stylus": "^1.0.2",
     "gulp.spritesmith": "^1.1.1",
     "jeet": "6.1.2",
-    "nib": "1.1.0",
-    "respond.js": "1.4.2",
-    "rapture": "0.0.6"
+    "nib": "1.1.0"
   }
 }

@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Qiwi test task</title>
-    <!--[if lte IE 8]>
-    <script src="src/assets/js/respond.min.js"></script>
-    <![endif]-->
     <link rel="stylesheet" href="built/assets/styles/style.css">
 </head>
 <body>
@@ -15,29 +12,40 @@
            <a class="logo" href="/"></a>
        </div>
 
-       <div class="auth b-header__auth">
+       <div class="b-header__auth">
            <form action="">
-               <div class="form-group auth__item">
-                    <span class="form-group__label">Войти в мой кошелек</span>
-                    <div class="form-group__ctrl form-group__ctrl_t_tel">
-                        <div class="form-group__lang form-group__lang_t_ru"></div>
-                        <input class="form-group__input" type="tel" placeholder="+7" pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер">
-                    </div>
-               </div>
-               <div class="form-group auth__item">
-                   <a href="#" class="form-group__label">Забыли пароль?</a>
-                   <div class="form-group__ctrl">
-                       <input class="form-group__input" type="password" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра">
+               <div class="form-group__wrapper  b-header__auth-wrapper">
+                   <div class="form-group b-header__auth-item">
+                       <span class="form-group__label">Войти в мой кошелек</span>
+                       <div class="form-group__ctrl form-group__ctrl_t_tel">
+                           <div class="form-group__lang form-group__lang_t_ru"></div>
+                           <input class="form-group__input" type="tel" placeholder="+7" pattern="(\+?\d[- .]*){7,13}" title="Международный, государственный или местный телефонный номер">
+                       </div>
+                   </div>
+                   <div class="form-group b-header__auth-item">
+                       <a href="#" class="form-group__label">Забыли пароль?</a>
+                       <div class="form-group__ctrl">
+                           <input class="form-group__input" type="password" placeholder="Пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  title="Не менее восьми символов, содержащих хотя бы одну цифру и символы из верхнего и нижнего регистра">
+                       </div>
                    </div>
                </div>
-               <button class="btn" type="submit">Войти</button>
-               <button class="btn btn_t_crystal" type="submit">Помощь</button>
+               <div class="btn__group b-header__auth-btn">
+                   <button class="btn" type="submit">Войти</button>
+                   <button class="btn btn_t_crystal" type="submit">Помощь</button>
+               </div>
+
            </form>
        </div>
        <h2 class="b-header__title">Добро пожаловать в QIWI Кошелек!</h2>
 
    </header>
    <div class="animations">
+       <div class="animations__item animations__item_t_cloud animations__item_t_cloud-1"></div>
+       <div class="animations__item animations__item_t_cloud animations__item_t_cloud-2"></div>
+       <div class="animations__item animations__item_t_cloud animations__item_t_cloud-3"></div>
+       <div class="animations__item animations__item_t_box-1"></div>
+       <div class="animations__item animations__item_t_box-2"></div>
+       <div class="animations__item animations__item_t_hero"></div>
        <section class="content">
             <div class="advantages">
                 <figure class="advantages__item">
@@ -66,12 +74,6 @@
             </div>
 
        </section>
-        <div class="animations__item animations__item_t_cloud animations__item_t_cloud-1"></div>
-        <div class="animations__item animations__item_t_cloud animations__item_t_cloud-2"></div>
-        <div class="animations__item animations__item_t_cloud animations__item_t_cloud-3"></div>
-        <div class="animations__item animations__item_t_box-1"></div>
-        <div class="animations__item animations__item_t_box-2"></div>
-        <div class="animations__item animations__item_t_hero"></div>
    </div>
     <footer class="footer">
         <div  class="footer__nav">

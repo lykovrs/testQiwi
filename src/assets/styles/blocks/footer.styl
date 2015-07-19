@@ -1,6 +1,7 @@
 .footer
   center(1260px, 20px)
   color $dark-grey
+  padding-bottom 20px
 
   &__nav
     span(2/3)
@@ -33,3 +34,71 @@
     span(1/3)
     font-size 14px
     text-align right
+
+@media (min-width: 481px) and (max-width:768px)
+  .footer
+    center(1260px, 20px)
+    color $dark-grey
+
+    &__nav
+      stack()
+
+    &__contacts
+      span(1/2)
+      shift(1/2)
+      text-align right
+      font-size 20px
+
+    &__phone
+      font-size 28px
+      padding 25px 0 15px
+
+    &__phone-lnk
+      color $dark-grey
+      text-decoration none
+
+    &__apps
+      span(1/2)
+      shift(-1/2)
+      margin 15px 0
+
+    &__partners
+      stack()
+      margin 15px 0
+      text-align center
+
+    &__lang-selector
+      span(1/2)
+
+    &__copyright
+      span(1/2)
+      font-size 14px
+      text-align right
+
+@media (max-width: 480px)
+  .footer
+    text-align center
+    &__nav
+      stack()
+
+    &__contacts
+      stack()
+
+    &__phone
+      font-size 18px
+      text-align center
+      padding 0 0 15px
+
+    &__apps
+      stack()
+
+    &__partners
+      stack()
+
+    &__lang-selector
+      stack()
+      margin-bottom 20px
+
+    &__copyright
+      stack()
+      text-align center

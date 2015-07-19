@@ -1,11 +1,4 @@
 .lang-selector
-
-
-  //
-  //&__list
-
-
-
   &__item
     padding: 0 10px 0 45px;
     display none
@@ -24,7 +17,11 @@
         margin-left 10px
 
     &_t_ru:before
-      sprite($s-ru)
+      background-image url($imgSrc + "/ru.png")
+      background-repeat no-repeat
+      background-size 100% auto
+      width 20px
+      height 15px
       display block
       content ""
       position absolute

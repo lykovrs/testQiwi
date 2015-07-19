@@ -2,16 +2,14 @@
   color #fff
   background #283991
   border 0
-  //max-width 230px
   height 40px
   padding 4px 22px
   font-size 18px
   white-space normal
   vertical-align top
-  //col(1/12)
 
   &:hover
-    background: #1f2c71;
+    background #1f2c71
 
   &_t_crystal
     background none
@@ -20,3 +18,23 @@
     &:hover
       background: none
       color $dark-grey
+
+  &__group
+    display inline-block
+    vertical-align middle
+
+@media (min-width: 769px) and (max-width:1024px)
+  .btn
+    &__group
+      margin-top 15px
+
+@media (max-width: 480px)
+  .btn
+    &_t_crystal
+      color #fff
+      background #283991
+
+      &:hover
+        background #1f2c71
+        color #fff
+

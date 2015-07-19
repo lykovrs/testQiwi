@@ -1,5 +1,7 @@
 .content
   center(740px, 20px)
+  z-index 10
+  position relative
 
   &__header
     stack()
@@ -7,7 +9,11 @@
     font-size 37px
 
   &__img
-    sprite($s-logo_wormix)
+    background-image url($imgSrc + "logo_wormix.png")
+    background-repeat no-repeat
+    background-size 100% auto
+    width 133px
+    height 77px
     display inline-block
     vertical-align middle
 
@@ -17,3 +23,45 @@
 
   &__registration
     margin 70px 0
+
+@media (min-width: 769px) and (max-width:1024px)
+  .content
+    &__header
+      font-size 30px
+      padding 0 0 30px
+      text-align center
+
+    &__img
+      display block
+      margin auto
+
+@media (min-width: 481px) and (max-width:768px)
+  .content
+    &__header
+      font-size 20px
+      padding 20px 0 30px
+      text-align center
+
+    &__img
+      display block
+      margin auto
+
+@media (max-width: 480px)
+  .content
+    &__header
+      font-size 20px
+      padding 20px 0 30px
+      text-align center
+
+    &__img
+      display block
+      margin auto
+
+    &__text
+      font-size 15px
+      line-height 19px
+
+    &__registration
+      margin 45px 0
+
+
